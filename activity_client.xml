@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+    <ListView
+        android:id="@+id/listViewAvailableSiteClientActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/dialogRelativeLayoutClientActivity"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:onClick="createNewSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addLaborAttendanceActivityBt"
+        app:fabSize="normal"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add_black_24dp"/>
+</FrameLayout>

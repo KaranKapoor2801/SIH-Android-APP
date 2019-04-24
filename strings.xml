@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Constructor Guru</string>
+    <string name="name_of_labor">Name Of Labor</string>
+    <string name="attendance">Attendance</string>
+    <string name="per_day_salary">Per Day Salary</string>
+    <string name="category">Category</string>
+    <string name="submit">Submit</string>
+    <string name="material_quantity">Material Quantity</string>
+    <string name="material_name">Material Name</string>
+    <string name="login">LogIn</string>
+    <string name="log_in_as_client">Log In As Client</string>
+    <string name="default_web_client_">893332301137-b2oasvhfgi2ui9caur1kspn2spbvn040.apps.googleusercontent.com</string>
+    <string name="defalt_secreat">IMIhUVl4RMRWBgNmpFsEt0Dg</string>
+    <string name="name">Name</string>
+    <string name="client_name">Client Name</string>
+    <string name="view_details">View Details</string>
+    <string name="share_id">Share Id</string>
+    <string name="progressing">Progressing...</string>
+    <string name="site_name">Site Name</string>
+    <string name="email_id_of_client">Email Id Of Client</string>
+    <string name="email_of_constructor">Constructor Email</string>
+    <string name="civil">Civil</string>
+    <string name="steel">Steel</string>
+    <string name="karan">Karan</string>
+    <string name="T31">TextView</string>
+    <string name="task_updates">Task Updates</string>
+</resources>

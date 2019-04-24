@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#FFFFFF"
+    app:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textColor="#00bc6c"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/TagCreateNewsite"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create New Site"/>
+    <EditText
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_below="@+id/TagCreateNewsite"
+        android:background="@drawable/background_of_dialog_edit"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/dialogClientSiteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/site_name" />
+    <EditText
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/background_of_dialog_edit"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/dialogClientSiteName"
+        android:id="@+id/dialogClientSiteEngineerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Site Engineer Email" />
+    <EditText
+        android:textSize="16sp"
+        android:background="@drawable/background_of_dialog_edit"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/dialogClientSiteEngineerId"
+        android:id="@+id/dialogEmailOfConstructor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_of_constructor" />
+    <RadioGroup
+        android:id="@+id/groupChoseProjectType"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/dialogEmailOfConstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/dialogClienCivilSelect"
+            android:text="@string/civil"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="@string/steel"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:background="@drawable/background_green_bt"
+        android:padding="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/groupChoseProjectType"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/submit"
+        android:textColor="#32b324"
+        android:textAllCaps="false"
+        android:id="@+id/dialogClientSiteDataSubmit"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

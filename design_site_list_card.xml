@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/siteDisplayList"
+    android:elevation="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="160dp"
+           android:id="@+id/fetchedSite">
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <TextView
+                   android:gravity="center"
+                   android:textSize="52sp"
+                   android:text="0%"
+                   android:layout_width="0dp"
+                   android:padding="8dp"
+                   android:id="@+id/avaliable_site_main_image_"
+                   android:src="@drawable/ic_launcher_background"
+                   android:layout_weight=".3"
+                   android:layout_height="match_parent" />
+               <RelativeLayout
+                   android:padding="8dp"
+                   android:layout_weight=".7"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent">
+                   <RelativeLayout
+                       android:padding="4dp"
+                       android:layout_width="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:id="@+id/avaliable_site_tag_name"
+                           android:padding="4dp"
+                           android:textColor="#000000"
+                           android:textSize="24sp"
+                           android:text="@string/name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                       <TextView
+                           android:id="@+id/avaliable_site_name"
+                           android:paddingLeft="10dp"
+                           android:paddingTop="6dp"
+                           android:paddingBottom="4dp"
+                           android:textSize="22sp"
+                           android:textColor="#000000"
+                           android:text="Jasraj"
+                           android:layout_toRightOf="@id/avaliable_site_tag_name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                       <TextView
+                           android:textColor="@color/black"
+                           android:id="@+id/avaliable_site_tag_client_name"
+                           android:text="@string/client_name"
+                           android:padding="4dp"
+                           android:textSize="22sp"
+                           android:layout_below="@+id/avaliable_site_tag_name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                       <TextView
+                           android:textColor="@color/black"
+                           android:id="@+id/avaliable_site_client_name"
+                           android:paddingLeft="10dp"
+                           android:paddingTop="4dp"
+                           android:paddingBottom="4dp"
+                           android:text="jasraj"
+                           android:textSize="20sp"
+                           android:layout_below="@id/avaliable_site_tag_name"
+                           android:layout_toRightOf="@id/avaliable_site_tag_client_name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                   </RelativeLayout>
+               </RelativeLayout>
+           </LinearLayout>
+       </LinearLayout>
+</android.support.v7.widget.CardView>

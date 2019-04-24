@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMaterialActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <AutoCompleteTextView
+            android:id="@+id/addMaterialTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:hint="Add a new material"
+            android:textSize="24dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:layout_weight="90"
+            android:id="@+id/addMaterialButton"
+            android:onClick="addNewMaterial"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add Materials"
+        android:onClick="submit"/>
+    <ListView
+        android:id="@+id/materialList"
+        android:layout_width="match_parent"
+        android:layout_height="601dp"></ListView>
+
+</LinearLayout>

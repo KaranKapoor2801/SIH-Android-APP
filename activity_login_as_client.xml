@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white_background"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white_background"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="48dp"
+            android:id="@+id/loginTag"
+            android:layout_below="@+id/loginLogo"
+            android:layout_centerHorizontal="true"
+            android:textSize="32sp"
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:drawableLeft="@drawable/ic_email_white_24dp"
+            android:padding="16dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/background_login_edit_text"
+            android:id="@+id/loginEmailEditText"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_below="@+id/loginTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/loginLoginButton"
+            android:layout_marginTop="48dp"
+            android:layout_below="@id/loginEmailEditText"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/loginAsClientTextView"
+            android:textSize="22sp"
+            android:text="@string/log_in_as_client"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/loginLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
